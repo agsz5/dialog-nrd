@@ -1,0 +1,12 @@
+<div class="nrd-dialog" [class.show]="show" role="dialog" id="dialog-nrd" aria-labelledby="dialog-nrd_label" aria-modal="true">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <h2 class="dialog-title" id="dialog-nrd_label">{{title}}</h2>
+        <button class="dialog-close" (click)="closeDialog()" aria-label="Close">x</button>
+      </div>
+      <div class="dialog-body">
+        <ng-content></ng-content>
+      </div>
+    </div>
+</div>
+  
