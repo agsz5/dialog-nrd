@@ -9,6 +9,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. Run "ng serve"
 4. Navigate to `http://localhost:4200/`
 
-## Further help
+## Notes
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- The component uses the `<dialog-nrd-app>` selector, and accepts the `[title]` and `[show]` parameters.
+- The commponent has a `closeDialog()` method which gives the flexibility to be attached to othe revents, such as submitting a form, or a custom `close` button which would perform the same function as the "x" (close) button provided in the component. 
+- The component accepts any content wrapped inside the `<dialog-nrd-app></dialog-nrd-app>`. For this one-page example I opted for a `<select>` component wich lets you choose between three possible scenarios: a 'Simple Text' content, a 'Form' Content, and a 'Consent' example. A consumer of this component can virtually wrapped any desired content inside the `<dialog-nrd-app>` component.
+- The application was tested for Usability with the 'WAVE' and "Axe" tools. All pertinent landmarks and necessary aria information was provided
+- Keyboard functionality was not tested due to time constraints
